@@ -209,6 +209,41 @@ color: white;
 background-color: gray;
 }
 
+.image-figure {
+    box-shadow: 0 4px 10px gray;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+
+.right-column {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .column-wrapper {
+        grid-template-columns: 2fr 1fr;
+    }
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .right-column img {
+        width: 100%;
+    }
+    .left-column img {
+        display: none;
+    }
+}
+
 
 @media only screen and (max-width: 775px){
     *{
