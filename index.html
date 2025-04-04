@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="info-leiste">
+            <h1>Mein Tagesablauf</h1>
+            <img src="/pictures/tallence_bild.jpg" alt="Tallance">
+        </div>
+        <div class="wrapper">
+            <div class="thesdays">
+                <ul class="days-list-wrapper">
+                    <li>
+                        <button class="bg-gray active" data-type="dayButton" data-day="monday" data-week="1">Montag</button>
+                    </li>
+                    <li>
+                        <button class="bg-gray" data-type="dayButton" data-day="thuesday" data-week="1">Dienstag</button>
+                    </li>
+                    <li>
+                        <button class="bg-gray" data-type="dayButton" data-day="wednesday" data-week="1">Mittwoch</button>
+                    </li>
+                    <li>
+                        <button class="bg-gray" data-type="dayButton" data-day="thursday" data-week="1">Donnerstag</button>
+                    </li>
+                    <li>
+                        <button class="bg-gray" data-type="dayButton" data-day="friday" data-week="1">Freitag</button>
+                    </li>
+                </ul>
+            </div>
+            <!--
+                data-week für Wochen Buttons
+                data-week & data-day für Tages buttons
+                    data-week wird angepasst, jenachdem welche Wochenbutton geklickt wurde
+                
+                Tages button => click => den entsprechenden EIntrag anhand data-week und data-day finden und anzeigen
+            
+            -->
+            <div class="infobox">
+                <div class="infobox-toggle">
+                    <button class="We-button bg-gray active" data-type="weekButton" data-week="1" data-day="monday">Woche 1</button>
+                    <button class="We-button bg-gray" data-type="weekButton" data-week="2" data-day="monday">Woche 2</button>
+                </div>
+                
+                <!-- Week 1 Monday -->
+                <div class="" data-type="dayEntry" data-day="monday" data-week="1">
+                    <article class="section-day-discribtion">
+                        <div class="title-flex">
+                            <h2 class="day-title">Montag</h2>
+                            <p>24.03.25</p>
+                        </div>
+                        <section>
+                            <h3 class="underline">Mein Arbeitsort</h3>
+                            <p>
+                                Am Montag fing mein Tag um 10:30 Uhr an. Da wurde ich erstmals in Empfang genommen,
+                                und mir wurde gezeigt, wo sich im Büro alles befindet – 
+                            </p>
+                            <div class="day-img-grid">
+                                <figure>
+                                    <img src="/pictures/Kuehlschrank.jpeg" alt="von Getränken">
+                                    <figcaption>von Getränken</figcaption>   
+                                </figure> 
+                                <figure>  
+                                    <img src="/pictures/Kafeemaschiene.jpeg" alt="Kafeemaschiene">
+                                    <figcaption>über Kaffemaschiene</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/pictures/sofa.jpeg" alt="sofa">
+                                    <figcaption>über einem gemütlichen Sofa</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/pictures/Conferenzraum.jpeg" alt="Konferenzraum">
+                                    <figcaption>über den Konferenzraum</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/pictures/Sueßigkeitenbox.jpeg" alt="Sueßes">
+                                    <figcaption>einer leckeren Süßigkeiten-Box</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/pictures/Obstkorb.jpeg" alt="Obstkorb">
+                                    <figcaption>bis hin zu einem Obstkorb.</figcaption>
+                                </figure>
+                            </div>
+                        </section>
+                        <section>
+                            <h3 class="underline">Mein Arbeitsplatz</h3>
+                            <p>
+                                An meinem Arbeitsplatz, der mir für den Tag zugewiesen wurde, 
+                                gab es höhenverstellbare Tische und ergonomische Stühle. 
+                                Der Arbeitsort war flexibel wählbar, da an jedem Tisch ein Monitor vorhanden war,
+                                an den man ein Kabel anschließen konnte. Mein Hauptarbeitsplatz befand sich im 5. Stock,
+                                jedoch konnte ich auch im 4. Stock arbeiten. Ich entschied mich jedoch für den 5. 
+                                Stock, da die für mich zuständigen Personen überwiegend dort waren. 
+                            </p>
+                            <div class="middle-img">
+                                <img src="/pictures/Arbeitsplatz.jpeg" alt="Mein Arbeitsplatz">
+                        </div>
+                        </section>
+                        <section>
+                            <h3 class="underline">Meine Begleiter</h3>
+                            <p>
+                                Robin und Kathleen wurden mir vorgestellt. Sie sind für die zwei Wochen meines Praktikums meine Ansprechpartner.
+                                David, der Leiter des Teams, in dem Robin und Kathleen arbeiten, steht mir ebenfalls als Ansprechpartner zur Verfügung.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="underline">MacBooks vs Max</h3> 
+                            <p>
+
+                                Als erste Tätigkeit habe ich ein MacBook Pro erhalten, auf dem ich zunächst das Onboarding durchführen musste.
+                                Das hat länger gedauert als erwartet, zudem musste ich mich erst einmal zurechtfinden, wie ein Mac funktioniert.
+                            </p>  
+                            <div class="fifty-img">
+                                <img src="/pictures/mc-book.jpeg" alt="MacBook">
+                            </div>
+                            <p>
+                                Nachdem das MacBook eingerichtet war, haben wir darüber gesprochen, welche Vorkenntnisse ich bereits habe und was ich von den zwei Wochen Praktikum erwarte.
+                                Im Anschluss wurden noch einige Fragen zur Firma sowie einige Fragen an mich gestellt. Zum Glück hatte Ich
+                                für den nächsten Tag gleich ein Rechnungswesen Termin bekommen, sodas ich wusste,
+                                das ich diese Woche noch sehe wie eine Rechnung zu stande kommt.
+                                Um 17 Uhr hatte ich Feierabend.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+
+                <!-- Week 1 Thuesday -->
+                <div class="display-none" data-type="dayEntry" data-day="thuesday" data-week="1">
+                    <article class="section-day-discribtion">
+                            <div class="title-flex">
+                                <h2 class="day-title">Dienstag</h2>
+                                <p>25.03.25</p>
+                            </div>
+                        <section>
+                                <h3 class="underline">Der Rechnungsprozess</h3>
+                            <p>
+                            Am Dienstag kam ich um 9 Uhr ins Büro.
+                            Mein Arbeitsplatz war derselbe wie am Vortag. Ich habe mich hingesetzt, alles vorbereitet und wurde in den Meetingraum gebeten. Dort habe ich Karsten kennengelernt.
+                            Er ist für alle Rechnungen verantwortlich sowie für deren Aufbewahrung und Speicherung.
+                            Er hat mir gezeigt, wie eine Rechnung entsteht und wie der Betrag zustande kommt.
+                            Außerdem erklärte er mir, wie eine Rechnung aufgebaut sein muss, damit sie gültig ist. Darüber hinaus wies er darauf hin, dass man besonders darauf achten sollte, wie hoch die Steuern in anderen Ländern sind, falls man mit dem Ausland zusammenarbeitet.    
+                            Er zeigte mir auch, wie diese Rechnungen an verschiedene Unternehmen gesendet werden.
+                            Am Ende des Meetings habe ich noch erfahren, was mit alten Rechnern passiert: Alle vier Jahre wird ein Rechner ausgetauscht, und einige werden an Mitarbeiter verkauft. Dafür gibt es einen Vertrag sowie eine Rechnung, die ebenfalls erstellt werden muss.
+                            </p>
+                                <div class="flex">
+                                    <img class="picture-change" src="/pictures/rechnung.jpeg" alt="">
+                                    <img class="picture-change" src="/pictures/Tauschlap.jpeg" alt="Laptop Tausch gegen Geld">
+                                </div>
+                        </section>
+                        <section>
+                                <h3 class="underline">Tagesablauf Projekt</h3>
+                            <p>
+
+                                Im Anschluss habe ich begonnen, diese Website (Tagesablauf) zu erstellen.
+                                Da ich schon längere Zeit nicht mehr mit HTML und CSS gearbeitet hatte,
+                                sondern hauptsächlich mit Java (Programmiersprache), musste ich mich erst wieder einarbeiten.
+                                Das ging jedoch relativ schnell.
+                            </p>
+                        </section>
+                        <section>
+                                <h3 class="underline">Mittagspause</h3>
+                            <p>
+                                Die Mittagspause war zwischen 12 und 14 Uhr, und in der Umgebung gab es viele Leckereien.
+                            </p>
+                        </section>
+                        <section>
+                                <h3 class="underline">Grundgerüst aufgebaut</h3>
+                            <p>
+                                Am Nachmittag habe ich die Seite grob aufgebaut – nur das Gerüst, noch ohne Styling. 
+                            </p>
+                        </section>
+                        <section>
+                                <h3 class="underline">Kunden des Unternehmens</h3>
+                            <p> 
+                                David hat mir dann die Kunden des Unternehmens vorgestellt und erklärt, womit sie arbeiten,
+                                welche Funktionen die verschiedenen Unternehmen haben und mit welchen Programmen Änderungen
+                                vorgenommen werden.
+                                Was mich am meisten schockiert hat, war die Tatsache,
+                                dass ein Programm mit allen Funktionen und Hilfstools schnell im fünfstelligen Bereich liegen kann.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+
+                <!-- Week 1 Wednesday -->
+                <div class="display-none" data-type="dayEntry" data-day="wednesday" data-week="1">
+                    <article class="section-day-discribtion">
+                        <div class="title-flex">
+                            <h2 class="day-title">Mittwoch</h2>
+                            <p>26.03.25</p>
+                        </div>
+                        <section>
+                            <h3 class="underline">Frühstück in der Firma</h3>
+                            <p>
+                                Am Mittwoch war das Meeting  Prime Day. Es begann damit, dass ich um 9:00 Uhr ins Büro kam.
+                                Ich startete mit den ersten Styles für meine Tagesablauf-Seite.
+                                Um 9:30 Uhr gab es dann Frühstück in der Firma. 
+                                Jede Woche am Mittwoch wird entweder Frühstück
+                                oder Mittagessen organisiert, bei dem alle zusammenkommen 
+                                und gemeinsam am Tisch essen.
+                            </p>
+                            <img src="/pictures/eating.jpeg" alt=""> 
+                        </section> 
+                        <section>
+                            <h3 class="underline">Meeting nach Meeting</h3>
+                            <p>
+                                Nach dem Frühstück war eigentlich ein Meeting angesetzt, um einen Praktikumsbericht über mein Praktikum bei Tallence zu veröffentlichen. Dieses wurde jedoch abgesagt. Dafür hatte ich mehr Zeit, um an den Styles weiterzuarbeiten, bis ich bemerkte, dass ich einen Fehler gemacht hatte, aufgrund der Struktur, weshalb ich von vorne anfangen musste.
+                                Um 11:00 Uhr fand ein weiteres Meeting statt, bei dem es um den aktuellen Projektwissensaustausch ging. Ziel war es, alle Teammitglieder zu informieren und den aktuellen Stand des Projekts zu teilen.
+                                Nach dem Meeting habe ich weiter an den Styles gearbeitet. Am Nachmittag war ich mit den Styles fertig. Beim zweiten Versuch ging es auch schneller, da ich mich an vieles erinnert hatte.
+                                Um 14:30 Uhr gab es noch ein wöchentliches Team-Meeting, bei dem die einzelnen Teams miteinander gesprochen haben, um die weitere Planung festzulegen und zu klären, was als Nächstes gemacht werden muss.
+                                Zum Schluss habe ich ein Video erhalten, mit dem ich mich die nächsten Tage beschäftigen soll,
+                                da ich dort <strong>Remote</strong> arbeite.
+                            </p>
+                        </section>
+                    </article>                    
+                </div>
+                
+                <!-- Week 1 Thursday -->
+                <div class="display-none" data-type="dayEntry" data-day="thursday" data-week="1">
+                    <article class="section-day-discribtion">
+                        <div class="title-flex">
+                            <h2 class="day-title">Donnerstag</h2>
+                            <p>27.03.25</p>
+                        </div>
+                        <section>
+                            <h3 class="underline">Home Office</h3>
+                            <p>
+                                Am Donnerstag hatte ich meinen ersten Remote-Arbeitstag. Das MacBook, das ich erhalten habe, durfte ich mit nach Hause nehmen, sodass ich nicht an meinem PC zu Hause ein Onboarding durchführen musste.
+                                Ich habe ein über sechs Stunden langes Video bekommen, in dem alles von Anfang an mit HTML und CSS Schritt für Schritt erklärt wird. Ich habe begonnen, das Video zu schauen und alle Übungen nachzustellen, die der Dozent gemacht hat. Außerdem habe ich verschiedene Challenges absolviert, wie zum Beispiel das Basteln einer Kauf-Einheit. Dabei habe ich viele verschiedene Kürzel gelernt, wie zum Beispiel #169, das für das Copyright-Zeichen steht, oder generell,
+                                wie man Symbole darstellt. Das deutsche &szlig; kann nur auf anderen Tastaturen als
+                                „sz-Ligation“ dargestellt werden.<br>
+                            </p>
+                            <img class="picture-change border" src="/pictures/Text.png" alt="">
+                            <p>
+                                Es gab auch weitere Challenges, wie zum Beispiel eine Kauf-Einheit von Amazon nachzustellen
+                                oder verschiedene Buttons zu stylen. Dabei hatte ich eine Menge Spa&szlig;, 
+                                da ich mich kreativ austoben konnte, wie ich die Buttons gestalte.
+                                Das hat wirklich Spaß gemacht!<br>
+                            </p> 
+                            <img class="picture-change border" src="/pictures/Amazone.png" alt="">
+                            <p>
+                                Am Nachmittag habe ich am Video weitergearbeitet, in dem ich verschiedene Textarten auf unterschiedliche Weise darstellen musste. Alles war dabei, von groß bis klein und durchgestrichen. Ich habe auch gelernt, wie man eine eigene Schriftart mit Google Fonts entwickelt.
+                                Kathleen hat mich anschließend noch einmal angerufen, um zu fragen, ob ich bei irgendetwas Hilfe benötige, und wollte wissen, was ich bis jetzt gemacht habe.
+                                Um 17 Uhr war dann wieder Feierabend.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+                
+                <!-- Week 1 Friday -->
+                <div class="display-none" data-type="dayEntry" data-day="friday" data-week="1">
+                    <article class="section-day-discribtion">
+                        <div class="title-flex">
+                            <h2 class="day-title">Freitag</h2>
+                            <p>28.03.25</p>
+                        </div>
+                        <section>
+                            <h3 class="underline">Meine Tagesablauf-Seite erweitern</h3>
+                            <p>
+                                Am Freitag habe ich wieder <strong>emote </strong>rgearbeitet, wo ich zunächst die Tagesablauf-Seite fertig gestylt habe.
+                                Mein Ziel ist es, die Tagesablauf-Seite so umzugestalten, dass statt mehreren Unterordnern nur noch ein Ordner verwendet wird.
+                                Man kann sich das so vorstellen, dass jeder Button auf der Website zu einem Unterordner führt: Stell dir vor,
+                                du machst einen Jahresplan und musst für jeden Tag einen neuen Unterordner erstellen. Irgendwann verliert man den Überblick und weiß nicht mehr,
+                                wo welcher Tag ist. Man hat keine Kontrolle mehr darüber, wo sich etwas befindet. Mithilfe von JavaScript kann ich nach einem Button-Klick
+                                das Ganze so einstellen, dass ein Text ausgeblendet wird und ein anderer wieder eingeblendet.
+                                So kann ich in einer Datei so viele Tage wie möglich erstellen.
+                            </p>
+                            <img src="/pictures/altes_tagesablauf.png" alt="">
+                        </section>
+                        <section>
+                            <h3 class="underline">Weiter mit dem Youtube-Clone</h3>
+                            <p>
+                                Danach habe ich mich wieder auf das YouTube-Video gestürzt.
+                                Ich hatte am letzten Tag bei einer Challenge aufgehört,
+                                die ich dann fortgesetzt habe. Dabei ging es um Flexboxen und darum, 
+                                wie sie sich bei verschiedenen Elementen verhalten.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="underline">Rätseln mit Robin</h3>
+                            <p>
+                                Anschließend hat Robin mich angerufen. Er wollte mir zeigen,
+                                wie er eine Funktion auf einer Website bei einem Kunden einbaut und hat mir alles Schritt für Schritt erklärt. 
+                                Manchmal musste ich auch raten.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="underline">Die letzten Stunden der ersten Woche</h3>
+                            <p>
+                                Am Nachmittag gab es eine längere Mittagspause.
+                                Nach der Pause habe ich begonnen, mit dem Tutorial einen YouTube-Clone mit HTML und CSS zu erstellen.
+                                Damit bin ich bis zu einem Grid-Tutorial gekommen, bei dem ich dann stehen geblieben bin.
+                            </p>
+                        </section>
+                    </article>
+                </div>         
+                
+                <!-- Week 2 Monday -->
+                <div class="display-none"  data-type="dayEntry" data-day="monday" data-week="2">
+                    <article class="section-day-discribtion">
+                        <div class="title-flex">
+                            <h2 class="day-title">Montag</h2>
+                            <p>31.03.25</p>
+                        </div>
+                        <section>
+                            <h3 class="underline">Eine Entscheidung</h3>
+                            <p>
+                                Am Montag begann der Tag damit, dass ich entscheiden musste,
+                                ob ich an einer Präsentation teilnehme und eine Folie über mein Praktikum der ersten Woche gestalte,
+                                da viele im Team mich noch nicht kannten und ich mich in einer Präsentation vorstellen sollte.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="underline"> Meine Präsentation</h3>
+                            <p>
+                                Dann fand das Root-MoinMoin-Meeting statt, bei dem ich meine Folie dem Team präsentiert habe.
+                                Ich habe darüber berichtet, wer ich bin, was ich diese Woche an Projekten gemacht habe und was mein Plan für die kommende Woche
+                                noch beinhaltet.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="underline">Verbesserungsvorschläge</h3>
+                            <p>
+                                Nach dem Meeting habe ich mich mit Robin zusammengesetzt, um meinen JavaScript-Code für die Tagesablauf-Website
+                                zu verbessern und einige Änderungen vorzunehmen. Er hat mir gezeigt, wie man JavaScript-Code "verschönert".
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="underline">YouTube-Projekt</h3>
+                            <p>
+                                Am Mittag habe ich mich weiterhin mit dem YouTube-Projekt beschäftigt. Als ich dann meinen Tagesbericht auf der Website geschrieben habe,
+                                kam mir noch eine Idee, die ich nach langem Probieren und Googeln hatte. Ich habe Robin um Hilfe gefragt.
+                                Danach habe ich mich weiter mit dem Grid-Tutorial auf YouTube beschäftigt. Im Anschluss gab es noch eine Challenge zu dem Grid-System.
+                                Grid ist eine Funktion, um mehrere Boxen mit gleichen Abständen in einer Reihe anzuordnen. Ist die Reihe voll, kommen die Boxen,
+                                die später erstellt werden, in die nächste Zeile, genau unter den anderen Boxen.
+                            </p>
+                            <img class="border" src="/pictures/altes-youtube.png" alt="">
+                        </section>
+                        <section>
+                            <h3 class="underline">Besprechung der Woche</h3> 
+                            <p>
+                                Dann haben wir darüber gesprochen, wie die Woche aussieht. Wenn ich wieder donnerstags und freitags remote arbeiten würde, 
+                                müsste ich den Laptop schon mittwochs abgeben, was ungünstig gewesen wäre, weil ich dann noch das Onboarding für diese beiden Tage am PC
+                                machen müsste. Am Ende haben wir uns entschieden, dass ich am Dienstag und Donnerstag im Home Office arbeiten soll.
+                                Zum Schluss wurde ich noch für ein Meeting am nächsten Tag eingetragen, und dann war der Arbeitstag auch schon zu Ende.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+                        <!-- Week 2 Thuesday -->
+                <div class="display-none"  data-type="dayEntry" data-day="thuesday" data-week="2">
+                    <article class="section-day-discribtion">
+                        <div class="title-flex">
+                            <h2 class="day-title">Dienstag</h2>
+                            <p>01.04.25</p>
+                        </div>
+                        <section>
+                            <h3 class="underline">Statamic</h3>
+                            <p>
+                                Für Dienstag haben wir uns für Remote-Arbeit entschieden. Der Tag begann mit einem Meeting,
+                                zu dem ich am Vortag eingeladen wurde. In dem Meeting wurde über den Bau einer Statamic-Website
+                                für einen Kunden gesprochen und wie weit man dort bereits gekommen ist. Statamic ist ein CMS-Programm.
+                                CMS steht für Content-Management-System. Es ist ein Programm, das dir dabei hilft, Inhalte zu erstellen,
+                                zu bearbeiten und zu organisieren. Der Inhalt kann dabei vielfältig sein, von Bildern über
+                                Texte bis hin zu Videos.
+                                Zum Beispiel könnte man meine Projekte mit Statamic erstellen, was die Verwaltung viel 
+                                übersichtlicher machen würde.
+                                Allerdings ist die Entwicklunsarbeit mit einem CMS weitaus mehr als reines HTML, CSS und JavaScript, weshalb dies
+                                ehr empfohlen ist, wenn man mehr Erfahrung in der Entwicklung hat, da jedes CMS unterschiedliche Technologien einsetzt, die
+                                weit über reines HTML, CSS und JavaScript hinaus geht.
+                            </p>
+                            <img src="/pictures/statamic.webp" alt="">
+                        </section>
+                        <section>
+                            <h3 class="underline">YouTube-Clone Verbessert und Header anfangen</h3>
+                            <p>
+                                Nachdem das Meeting beendet war, ging es weiter mit meinem YouTube-Clone, bei dem ich zunächst das vorhandene Grid-System 
+                                verbessert habe. Danach musste ich mich mit Flexboxen beschäftigen. Flexbox funktioniert ähnlich wie Grid,
+                                bietet jedoch mehr Flexibilität und ist einfacher zu definieren. Im Gegensatz dazu kann man bei Grid sehr präzise sein.                    
+                                Mit den Flexboxen habe ich den Kopfbereich der YouTube-Clone-Seite erstellt,
+                                wobei ich zunächst alle Icons dafür herunterladen musste. Nachdem ich das erledigt hatte, 
+                                habe ich sie in die Seite integriert und gestylt. Als ich damit fertig war, war der Tag auch schon vorbei.
+                            </p>
+                        </section>
+                    </article>
+                </div>  
+                
+                <!-- Week 2 wednesday -->
+                <div class="display-none"  data-type="dayEntry" data-day="wednesday" data-week="2">
+                    <article class="section-day-discribtion">
+                        <div class="title-flex">
+                            <h2 class="day-title">Mittwoch</h2>
+                            <p>02.04.25</p>
+                        </div>
+                        <section>
+                            <h3 class="underline"> YouTube-Clone Sidebar</h3>
+                            <p>
+                                Am Mittwoch habe ich mich am Vormittag mit meinem YouTube-Clone beschäftigt und eine Sidebar eingefügt.
+                                Eine Sidebar ist eine Art Navigation an der Seite. Dafür musste ich zunächst die vorgegebenen Icons herunterladen.
+                                Die Sidebar war wieder eine flexible Box, weshalb ich mit display: flex gearbeitet habe. 
+                                Danach habe ich den Header auf der rechten Seite des Projekts fertiggestellt. Als ich damit fertig war, 
+                                habe ich begonnen, die Icons in der Sidebar zu stylen.
+                            </p>
+                            <img class="border" src="/pictures/youtube-clone.png" alt="">
+                        </section>
+                        <section>
+                            <h3 class="underline">Mittag im Büro</h3>
+                            <p>
+                                Zum Mittag gab es Essen in der Firma – leckere Croques.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="underline">Tagesablauf Seite Stylen</h3>
+                            <p>
+                                Am Nachmittag habe ich weiter an meinem Tagesablauf-Projekt gearbeitet. Nachdem ich das erste Styling für Montag fertiggestellt
+                                hatte, ging ich zu Robin. Er hatte die Idee, das Ganze im Block-Style zu gestalten. Ich fragte ihn, ob es so gut sei und ob er
+                                es sich so vorgestellt hatte. Nachdem er meinte, dass es gut aussieht, haben wir noch über formale Richtlinien gesprochen 
+                                und darüber, wie er sich solche Dinge merkt. Ich hatte einige Attribute nämlich anders in Erinnerung.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="underline">Restlichen Tage  besprochen</h3>
+                            <p>
+                                Danach haben wir über meine Computer-Rückgabe am Freitag gesprochen und darüber,
+                                wie der Tag ablaufen wird. Schließlich habe ich noch den Dienstag-Abschnitt meiner Tagesablauf-Seite
+                                fertiggestellt – und dann war der Arbeitstag auch schon zu Ende.
+                            </p>
+                        </section>
+                    </article>
+                </div> 
+                
+                <!-- Week 2 Thursday -->
+                <div class="display-none"  data-type="dayEntry" data-day="thursday" data-week="2">
+                    <article class="section-day-discribtion">
+                        <div class="title-flex">
+                            <h2 class="day-title">Donnerstag</h2>
+                            <p>03.04.25</p>
+                        </div>
+                        <section>
+                            <h3 class="underline">Tagesabläufe schreiben</h3>
+                            <p>
+                                Am Donnerstag habe ich wieder <strong>remote</strong> gearbeitet. Ich begann damit, die Tagesabläufe zu schreiben, 
+                                die mir noch fehlten. Dafür habe ich sie in Word geschrieben, um direkt zu sehen, ob es Schreibfehler gab. 
+                                Ich bin mir eigentlich sicher, dass Visual Studio Code eine ähnliche Funktion hat, aber als ich es ausprobiert habe,
+                                hat es nicht so funktioniert, wie ich es wollte.
+                                Nachdem ich die Texte kopiert hatte, habe ich sie <i>hier</i> eingefügt. Danach habe ich einige Bilder, die ich gemacht hatte,
+                                auf die Seite hochgeladen und gestylt.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="underline">Kathleen Huddle</h3>
+                            <p>
+                                Kathleen hatte mich angefrufen, da ich ihr meinen Code zeigen wollte. Sie hatte noch einige verbesserungs Vorschläge, zur 
+                                Semantik. Das heißt, wie ist die Website aufgebaut. Kommt nach einer Überschrift auch ein  Text oder eine Überschrift nach der anderen.
+                                Danach ging sie mit mir nochmal den Java Script Teil eins nach dem anderen durch. 
+                                </p>
+                        </section>
+                        <section>
+                            <h3 class="underline">Media Queries</h3>
+                            <p>
+                                Als ich alles geschrieben hatte, kümmerte ich mich um die Media Queries, also das responsive Webdesign. Das bedeutet, 
+                                dass die Website auch auf dem Handy oder Tablet gut dargestellt wird. Wenn man eine Seite nur für eine große Bildschirmversion
+                                erstellt, kann es passieren, dass sie auf einem Handy anders aussieht als gewünscht. Um das zu vermeiden, 
+                                passt man das Layout vorher entsprechend an.
+                            </p>
+
+                            <img src="/pictures/Mediaquer.png" alt="">
+                            <p>
+                                Damit bin ich noch nicht ganz fertig geworden, aber der Arbeitstag war dann auch schon vorbei.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+                <!-- Week 2 Friday -->
+
+                <div class="display-none"  data-type="dayEntry" data-day="friday" data-week="2">
+                    <article class="section-day-discribtion">
+                        <div class="title-flex">
+                                <h2 class="day-title">Freitag</h2>
+                                <p>04.04.25</p>
+                        </div>
+                        <section>
+                            <h3 class="underline">Die Reste des Tagesablauf-Projekt</h3>
+                            <p>
+                                Am Freitag war mein letzter Arbeitstag. Zunächst habe ich mich mit den restlichen Media Queries beschäftigt und die Bilder 
+                                noch einmal ordentlich überarbeitet. Ich habe viel Code geschrieben, um das Verhalten der einzelnen Bilder zu definieren.
+                                Dabei habe ich sowohl display: grid als auch display: flex verwendet, um die Bilder genau so anzuordnen, wie ich es wollte.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="underline">Letztes mal Mittag in der Umgebung</h3>
+                            <p>
+                                Danach habe ich mir etwas zu essen geholt und im Konferenzraum mein Mittagessen gegessen.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="underline">Tagesablauf-Projekt besprochen </h3>
+                            <p>
+                                Nach dem Essen habe ich die Website mit Robin besprochen – was ich noch verbessern muss und
+                                was ich zusätzlich optimieren könnte. Anschließend bin ich gemeinsam mit David noch einmal alle Daten 
+                                zu meinem Praktikum durchgegangen. Wir haben einige Fehler korrigiert und besprochen, welche Informationen 
+                                ich für meine Präsentation oder mein Handout verwenden darf und welche nicht.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 class="underline">Auf Wiedersehen</h3>
+                            <p>
+                                Danach musste ich meinen Laptop abgeben. Also habe ich alle meine Daten auf einen USB-Stick gespeichert 
+                                und meinen Laptop zurückgegeben. Im Anschluss habe ich auch meinen Zugangsschlüssel abgegeben und mich von allen,
+                                die vor Ort waren, verabschiedet.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+        <script src="/javascript/js2.js"></script>
+    </body>
+</html>

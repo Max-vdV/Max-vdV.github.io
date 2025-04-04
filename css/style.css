@@ -1,0 +1,424 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+ 
+}
+
+body{
+    padding-bottom: 20px;
+    padding-right: 5px;
+}
+
+.title-flex{
+    display: flex;
+    justify-content:space-between;
+    font-weight: bold;
+}
+
+.day-title{
+    text-decoration: underline;
+}
+
+.infobox{
+    padding-left: 160px;
+}
+
+.day-img-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.middle-img {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+
+.bg-gray.active {
+    background-color: rgb(139, 136, 136)
+}
+
+.display-none{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+.wrapper{
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul li button{
+    width: 100%;
+    padding: 30px;
+    border: none;
+}
+
+.We-button{
+    border: none;
+    padding: 30px;
+}
+
+
+.info-leiste{
+    height: auto;
+    font-size: 66px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+        h1{
+            font-size: 66px;
+        }
+    
+}
+
+.info-leiste img{
+    width: auto;
+    height: 66px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+p{
+    font-size: 22px;
+}
+
+
+.section-day-discribtion{
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 22px;
+
+        img{
+            width: 100%;
+        }
+
+        .picture-change{
+            width: 50%;
+        }
+        h3{
+            font-size: 22px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        img.border{
+            border: 1px solid black;
+        }
+}
+
+
+
+div.thesdays{
+    background-color: #EDEAE0;
+    position: fixed;
+    top: 180px;
+    left: 0px;
+}
+
+
+.days-list-wrapper li {
+    list-style-type: none;
+}
+
+.days-list-wrapper li a {
+    display: block;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.days-list-wrapper li a:hover {
+    background-color: #b1ac9d;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:link { 
+    text-decoration: none; 
+} 
+
+a:visited { 
+    text-decoration: none; 
+} 
+
+a:active { 
+    text-decoration: none; 
+}
+
+
+.infobox a {
+display: block;
+width: auto;
+margin-bottom: 30px;
+font-size: 30px;
+padding: 10px;
+background-color: #EDEAE0;
+}
+
+.infobox a.active {
+color: white;
+background-color: gray;
+}
+
+.infobox a:hover{
+background-color: #b1ac9d;
+}
+
+.infobox-toggle{
+display: flex;
+}
+
+.infobox div p{
+font-size: 18px;
+}
+
+.bold{
+font-weight: bold;
+}
+
+.section-day-title{
+justify-content: center;
+}
+
+.atpoint{
+color: white;
+background-color: gray;
+}
+
+
+@media only screen and (max-width: 775px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .info-leiste img{
+        width: auto;
+        height: 32px;
+    }
+
+    
+    .infobox{
+        padding-left: 110px;
+    }
+
+    .infobox div p{
+        font-size: 16px;
+        line-height: 1.5;
+        }
+    
+    .info-leiste{
+        height: auto;
+        border-bottom: 1px solid black;
+        h1{
+            font-size: 20px;
+        }
+    }
+
+    div.thesdays{
+        background-color: #EDEAE0;
+        position: fixed;
+        top: 140px;
+        left: 0px;
+    }
+
+    ul li button{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        }
+}
+
+
+@media only screen and (max-width: 550px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        align-items: center;
+    }
+
+    .info-leiste img{
+        width: auto;
+        height: 32px;
+    }
+    .day-img-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+
+    
+    .infobox{
+        padding-left: 100px;
+    }
+
+    .infobox div p{
+        font-size: 14px;
+        line-height: 1.5;
+        }
+    
+    .info-leiste{
+        height: auto;
+        border-bottom: 1px solid black;
+        h1{
+            font-size: 20px;
+        }
+    }
+
+    ul li button{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        }
+}
+
+
+@media only screen and (max-width: 450px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        align-items: center;
+    }
+
+    .info-leiste img{
+        display: none;
+    }
+
+    .day-img-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .section-day-discribtion{
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 6px;
+        padding: 10px;
+        line-height: 1.5;
+        font-size: 16px;
+    
+            img{
+                width: 100%;
+            }
+    
+            .picture-change{
+                width: 50%;
+            }
+            h3{
+                font-size: 22px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+    
+            img.border{
+                border: 1px solid black;
+            }
+    }
+
+
+
+
+    .infobox div p{
+        font-size: 14px;
+        line-height: 1.5;
+        }
+    
+    .info-leiste{
+        height: auto;
+        border-bottom: 1px solid black;
+        h1{
+            font-size: 18px;
+        }
+    }
+    p{font-size: 12px;}
+
+    ul li button{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        }
+}
+
+
+@media only screen and (max-width: 400px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        align-items: center;
+    }
+
+    .infobox{
+        padding-left: 80px;
+    }
+
+    .info-leiste img{
+        display: none;
+    }
+
+    .day-img-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+
+
+
+    .infobox div p{
+        font-size: 14px;
+        }
+    
+    .info-leiste{
+        height: auto;
+        border-bottom: 1px solid black;
+        h1{
+            font-size: 20px;
+        }
+    }
+
+    ul li button{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        }
+
+}
+
+
+
+
+
+  
+
+
+
